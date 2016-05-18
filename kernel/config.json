@@ -54,9 +54,9 @@
     },
     "namespace": "deskcloud",
     "name": "deskcloud",
-    "description": "",
-    "author": "",
-    "version": "0.0.1",
+    "description": "kernel deskcloud",
+    "author": "devilscream",
+    "version": "0.1",
     "verbose": false,
     "requires": {
         "extensions": [
