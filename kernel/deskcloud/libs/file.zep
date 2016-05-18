@@ -54,5 +54,5 @@ class File {
           }else{
               return filesize(location);
           }
-		}
+      }
 }
