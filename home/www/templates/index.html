@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<title>DeskCloud</title>
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link href="themes/default.css" rel="stylesheet"/>
+	<link href="themes/mac_os_x.css" rel="stylesheet"/>
+	<link href="css/deskcloud.css" rel="stylesheet"/>
+	<script src="js/prototype.js"> </script>
+	<script src="js/jquery-1.6.min.js"></script>
+	<script src="js/jquery.jplayer.min.js" ></script>
+	<script src="js/jquery.backstretch.min.js"> </script>
+	<script src="js/effects.js"> </script>
+	<script src="js/window.js"> </script>
+	<script src="js/window_effects.js"> </script>
+	<script src="js/main.js"> </script>
+	<script src="js/app.js"> </script>
+</head>
+
+<body>
+
+<div id="deskcloud_dock">
+	<div id="deskcloud_logo"><img src="images/favicon.png" class="menu_class" /></div>
+	<div id="deskcloud_top_main_menu">
+		<ul id="deskcloud_inline_top_menu">
+			<li><a href="#">DeskCloud</a>
+			</li>
+		</ul>
+		<div id="dock_right"><a href="#" id="music-player"></a></div>
+	</div>
+</div>
+
+<div id="deskcloud_dock_bottom"></div>
+
+<ul class="the_menu">
+	<span></span>
+	<li><a href="#" onClick="deskcloudVirtualConsole();" class="deskcloud_startmenu_item_terminal">Terminal</a></li>
+	<li><a href="#"  onClick="deskcloud('Photo Viewer', 'apps/photoviewer/index.html');" class="deskcloud_startmenu_item_photo">Photo Viewer</a></li>
+	<li><a href="#"  onClick="deskcloud('Music Player', '');" class="deskcloud_startmenu_item_music">Music Player</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+* { outline:none; }
+ul, li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background: #000 url("../images/body-bg.png") no-repeat fixed center 10px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+a {
+	text-decoration:none;
+	color:#FFF;
+}
+#deskcloud_dock {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:35px;
+	background:transparent url("../images/bg_trans_70.png") repeat 0 0;
+	z-index: 99;
+}
+#deskcloud_dock div#deskcloud_logo {
+	border:none;
+	display:block;
+	width:25px;
+	cursor:pointer;
+	float:left;
+	margin-top:9px;
+	margin-left:10px;
+}
+
+#deskcloud_dock div#deskcloud_top_main_menu div#dock_right {
+	float:right;
+	margin:9px 10px 0 0;
+}
+
+
+#deskcloud_dock_bottom {
+	position:absolute;
+	bottom:0;
+	bottom:0;
+	width:100%;
+	height:20px;
+	background:transparent url("../images/bg_trans_70.png") repeat 0 0;
+	z-index: 9999;
+}
+.deskcloud_minimized_window {
+	float:left;
+	width:102px;
+	height:20px;
+	text-align:center;
+	color: #FFF;
+	background:transparent url("../images/bg_trans_70.png") repeat 0 0;
+	line-height: 20px;
+	margin:0 1px;
+	cursor:pointer;
+}
+
+
+#deskcloud_inline_top_menu, #deskcloud_inline_top_menu ul{
+	margin:9px 10px 0 0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	line-height:18px;
+}
+
+#deskcloud_inline_top_menu a{
+	display:block;
+	padding:0 5px;
+	color:#fff;
+	text-decoration:none;
+}
+
+#deskcloud_inline_top_menu a:hover{
+	background-color:#fff;
+	color:#333;
+}
+
+#deskcloud_inline_top_menu li{
+	float:left;
+	position:relative;
+}
+
+#deskcloud_inline_top_menu ul {
+	position:absolute;
+	display:none;
+	width:12em;
+	top:20px;
+}
+
+#deskcloud_inline_top_menu li ul a{
+	width:12em;
+	height:auto;
+	float:left;
+}
+
+#deskcloud_inline_top_menu ul ul{
+	top:auto;
+}
+
+#deskcloud_inline_top_menu li ul ul {
+	left:12em;
+	margin:0px 0 0 10px;
+}
+
+#deskcloud_inline_top_menu li:hover ul ul, #deskcloud_inline_top_menu li:hover ul ul ul, #deskcloud_inline_top_menu li:hover ul ul ul ul{
+display:none;
+}
+#deskcloud_inline_top_menu li:hover ul, #deskcloud_inline_top_menu li li:hover ul, #deskcloud_inline_top_menu li li li:hover ul, #deskcloud_inline_top_menu li li li li:hover ul{
+display:block;
+}
+
+
+/* ############################# SLIDER ##############################*/
+
+.the_menu {
+	position:absolute;
+	display:none;
+	width:300px;
+	height:500px;
+	top:31px;
+	background: url("../images/launcher.png") no-repeat 2px 2px;
+	left:0;
+}
+
+
+
+.deskcloud_startmenu_item_terminal {
+  background: url("../images/icons/terminal_icon.png") no-repeat 10px 5px;
+}
+.deskcloud_startmenu_item_music {
+  background: url("../images/icons/music_icon.png") no-repeat 10px 5px;
+}
+.deskcloud_startmenu_item_photo {
+  background: url("../images/icons/photo_icon.png") no-repeat 10px 5px;
+}
+.deskcloud_startmenu_item_mynotes {
+  background: url("../images/my_notes.png") no-repeat 2px 2px;
+}
+.deskcloud_startmenu_item_ymspy {
+  background: url("../images/ymspy.png") no-repeat 2px 2px;
+}
+.deskcloud_startmenu_item_stringtools {
+  background: url("../images/stringtoolsconversions.png") no-repeat 2px 2px;
+}
+
+.the_menu span {
+	color:#333;
+	text-decoration:none;
+	padding:30px;
+	display:block;
+	padding-left: 40px;
+}
+
+.the_menu li a {
+	color:#333;
+	text-decoration:none;
+	padding:12px;
+	display:block;
+	padding-left: 50px;
+}
+
+.the_menu li a:hover {
+	font-weight:bold;
+	color: #333;
+}
+/* about lists */
+#about_deskcloud {
+	top:20px;
+	position:absolute;
+	display:none;
+	width:200px;
+	left:37px;
+	border: 1px solid #1c1c1c;
+}
+
+#about_deskcloud li {
+	background-color: #302f2f;
+}
+
+#about_deskcloud li a {
+	color:#FFFFFF;
+	text-decoration:none;
+	padding:10px;
+	display:block;
+}
+
+#about_deskcloud li a:hover {
+	padding:10px;
+	font-weight:bold;
+	color: #F00880;
+	background: url('../images/StartmenuItemBG.gif') no-repeat;
+}
+
+
+/* help list */
+#help_menu {
+	top:20px;
+	position:absolute;
+	display:none;
+	width:200px;
+	left:300px;
+	border: 1px solid #1c1c1c;
+}
+
+#help_menu li {
+	background-color: #302f2f;
+}
+
+#help_menu li a {
+	color:#FFFFFF;
+	text-decoration:none;
+	padding:10px;
+	display:block;
+}
+
+#help_menu li a:hover {
+	padding:10px;
+	font-weight:bold;
+	color: #F00880;
+	background: url('../images/StartmenuItemBG.gif') no-repeat;
+}
+
+/* Music Player */
+#music-player-action {
+	width:420px;
+	border: 1px solid #1c1c1c;
+	border-top:none;
+	position:absolute;
+	z-index:100;
+	display:none;
+	top:20px;
+	right:0;
+	opacity:0.7;
+	text-shadow:1px 1px 1px #000;
+	-moz-box-shadow:1px 1px 5px #009be3;
+	-webkit-box-shadow:1px 1px 5px #009be3;
+	box-shadow:1px 1px 5px #009be3;
+	-webkit-box-reflect:
+	below 5px
+	-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(transparent),
+			color-stop(0.6, transparent),
+			to(rgb(18, 18, 18))
+	);
+}
+ * Gallery
+ * *********************************************************************/
+
+.dolphin_list	{ background: #FFFFFF; color: #333333; display:block; padding: 10px 10px 10px 10px; margin-bottom: 15px; border: 1px solid #DDDDDD; border-bottom: 1px solid #CCCCCC; -moz-border-radius: 3px 3px 3px 3px; -webkit-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px; }
+.dolphin_list li	{ display: inline-block; float: left; vertical-align: top; }
+
+.dol-large li			{ width: 88px; margin: 5px 5px 0px 5px; padding-bottom: 10px; }
+.dol-large .thumb		{ display: block; width: 80px; height: 80px; border: 1px solid #BBBBBB; padding: 3px; background: #FFFFFF; margin-bottom: 4px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.dol-large .title		{ color: #333333; display: block; font-size: 11px; line-height: 18px; padding: 0px 6px 0px 6px; background: url('../images/ui-bg_glass_100_f6f6f6_1x400.png') left center repeat-x; border: 1px solid #DDDDDD; border-bottom: 1px solid #CCCCCC; text-align: center; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.dol-large .title .wrap		{ display: block; white-space: nowrap; overflow: hidden; }
+.dol-large li:hover .title	{ color: #FFFFFF; height: 20px; position: relative; border-width: 0px; padding: 0px; }
+.dol-large li:hover .wrap	{ padding: 0px 6px 0px 6px; border: 1px solid #333333; min-width: 74px; overflow: visible; position: absolute; top: 0px; left: 0px; background: #333333; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+
+#deskcloud_start_menu {
+	height: 519px;
+	width: 246px;
+	position: fixed;
+	top: 20px;
+	left:0;
+	border:1px solid #000;
+	border-top:none;
+	z-index: 999;
+	background: url('../images/bg_trans_70.png') repeat 0 0;
+}
+
+#deskcloud_start_menu #NavItems {
+	margin-left: 12px;
+	list-style: none;
+	position: absolute;
+}
+
+#deskcloud_start_menu #NavItems a li {
+  cursor: pointer;
+  height: 36px;
+  width: 246px;
+  display:block;
+}
+#deskcloud_start_menu ul#NavItems a li span.hover {
+  background: url('../images/StartmenuItemBG.gif') no-repeat;
+  color:#000;
+}
+#deskcloud_start_menu #NavItems span {
+  padding-left: 40px;
+  line-height: 36px;
+  height: 36px;
+  margin: 0px;
+  display: block;
+  font-family: arial;
+  font-size: 12px;
+}
