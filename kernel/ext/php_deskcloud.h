@@ -11,11 +11,11 @@
 #include "kernel/globals.h"
 
 #define PHP_DESKCLOUD_NAME        "deskcloud"
-#define PHP_DESKCLOUD_VERSION     "0.0.1"
+#define PHP_DESKCLOUD_VERSION     "0.1"
 #define PHP_DESKCLOUD_EXTNAME     "deskcloud"
-#define PHP_DESKCLOUD_AUTHOR      ""
+#define PHP_DESKCLOUD_AUTHOR      "devilscream"
 #define PHP_DESKCLOUD_ZEPVERSION  "0.9.3a-dev"
-#define PHP_DESKCLOUD_DESCRIPTION ""
+#define PHP_DESKCLOUD_DESCRIPTION "kernel deskcloud"
 
 
 

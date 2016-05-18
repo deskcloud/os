@@ -12,7 +12,6 @@
 #include <Zend/zend_interfaces.h>
 
 #include "kernel/main.h"
-#include "kernel/memory.h"
 
 
 ZEPHIR_INIT_CLASS(Deskcloud_Deskcloud) {
@@ -25,13 +24,9 @@ ZEPHIR_INIT_CLASS(Deskcloud_Deskcloud) {
 
 PHP_METHOD(Deskcloud_Deskcloud, version) {
 
-	zval *location;
+	
 
-	zephir_fetch_params(0, 1, 0, &location);
-
-
-
-	RETURN_STRING("Build 0.1", 1);
+	RETURN_STRING("0.1", 1);
 
 }
 

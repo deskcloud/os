@@ -9,7 +9,8 @@ if test "$PHP_DESKCLOUD" = "yes"; then
 	fi
 
 	AC_DEFINE(HAVE_DESKCLOUD, 1, [Whether you have Deskcloud])
-	deskcloud_sources="deskcloud.c kernel/main.c kernel/memory.c kernel/exception.c kernel/hash.c kernel/debug.c kernel/backtrace.c kernel/object.c kernel/array.c kernel/extended/array.c kernel/string.c kernel/fcall.c kernel/extended/fcall.c kernel/require.c kernel/file.c kernel/operators.c kernel/math.c kernel/concat.c kernel/variables.c kernel/filter.c kernel/iterator.c kernel/time.c kernel/exit.c deskcloud/deskcloud.zep.c "
+	deskcloud_sources="deskcloud.c kernel/main.c kernel/memory.c kernel/exception.c kernel/hash.c kernel/debug.c kernel/backtrace.c kernel/object.c kernel/array.c kernel/extended/array.c kernel/string.c kernel/fcall.c kernel/extended/fcall.c kernel/require.c kernel/file.c kernel/operators.c kernel/math.c kernel/concat.c kernel/variables.c kernel/filter.c kernel/iterator.c kernel/time.c kernel/exit.c deskcloud/deskcloud.zep.c
+	deskcloud/libs/file.zep.c "
 	PHP_NEW_EXTENSION(deskcloud, $deskcloud_sources, $ext_shared,, )
 	PHP_SUBST(DESKCLOUD_SHARED_LIBADD)
 

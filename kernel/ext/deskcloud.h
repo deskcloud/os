@@ -5,5 +5,6 @@
 #define ZEPHIR_CLASS_ENTRIES_H
 
 #include "deskcloud/deskcloud.zep.h"
+#include "deskcloud/libs/file.zep.h"
 
 #endif
