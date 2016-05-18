@@ -1,4 +1,4 @@
 <?php
-use Deskcloud\Deskcloud;
-print Deskcloud::version();
+require_once("core/loader.php");
+print $main->version();
 ?>
