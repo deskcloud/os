@@ -37,5 +37,3 @@ dolphin_to_articles_dir.getContent().innerHTML =
 "<li><a href=\"#\" onclick=\"deskcloud('Title Example','archives/page-example.html')\" title=\"Judul\"><img src=\"images/mimetypes/txt.png\" alt=\"\" class=\"thumb\" /></a><span class=\"title\"><span class=\"wrap\">and on . . . . . . .</span></span></li>" +
 
 "</ul>"+"</div>";
-
-stringtools.showCenter();

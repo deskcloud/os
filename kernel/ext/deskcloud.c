@@ -30,6 +30,7 @@
 zend_class_entry *deskcloud_config_ce;
 zend_class_entry *deskcloud_deskcloud_ce;
 zend_class_entry *deskcloud_libs_file_ce;
+zend_class_entry *deskcloud_libs_time_ce;
 
 ZEND_DECLARE_MODULE_GLOBALS(deskcloud)
 
@@ -58,6 +59,7 @@ static PHP_MINIT_FUNCTION(deskcloud)
 	ZEPHIR_INIT(Deskcloud_Config);
 	ZEPHIR_INIT(Deskcloud_Deskcloud);
 	ZEPHIR_INIT(Deskcloud_Libs_File);
+	ZEPHIR_INIT(Deskcloud_Libs_Time);
 
 #if PHP_VERSION_ID < 50500
 	setlocale(LC_ALL, old_lc_all);

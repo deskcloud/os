@@ -7,5 +7,6 @@
 #include "deskcloud/config.zep.h"
 #include "deskcloud/deskcloud.zep.h"
 #include "deskcloud/libs/file.zep.h"
+#include "deskcloud/libs/time.zep.h"
 
 #endif
