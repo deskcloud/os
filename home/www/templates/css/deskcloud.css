@@ -157,10 +157,10 @@ display:block;
   background: url("../images/stringtoolsconversions.png") no-repeat 2px 2px;
 }
 
-.the_menu span {
+.the_menu label {
 	color:#333;
 	text-decoration:none;
-	padding:35px;
+	padding:14px;
 	display:block;
 	padding-left: 40px;
 }

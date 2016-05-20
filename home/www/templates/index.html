@@ -7,6 +7,8 @@
 	<link href="themes/default.css" rel="stylesheet"/>
 	<link href="themes/mac_os_x.css" rel="stylesheet"/>
 	<link href="css/deskcloud.css" rel="stylesheet"/>
+	<link href="css/launcher.css" rel="stylesheet"/>
+	<link href="css/font-awesome.css" rel="stylesheet"/>
 	<script src="js/prototype.js"> </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.jplayer.min.js" ></script>
@@ -34,7 +36,14 @@
 <div id="deskcloud_dock_bottom"></div>
 
 <ul class="the_menu">
-	<span></span>
+	<label></label>
+	<div class="box">
+	  <div class="container-1">
+	      <span class="icon"><i class="fa fa-search"></i></span>
+	      <input type="search" id="search" placeholder="Search..." />
+	  </div>
+	</div>
+	<label></label>
 	<li><a href="#"  onClick="deskcloud('Calculator', 'apps/calculator/index.html', 248, 196);" class="deskcloud_startmenu_item_calculator">Calculator</a></li>
 	<li><a href="#"  onClick="deskcloud('Photo Viewer', 'apps/photoviewer/index.html');" class="deskcloud_startmenu_item_photo">Photo Viewer</a></li>
 	<li><a href="#" onClick="deskcloudVirtualConsole();" class="deskcloud_startmenu_item_terminal">Terminal</a></li>
