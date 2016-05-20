@@ -1,9 +1,11 @@
-function deskcloud(o, k){
+function deskcloud(o, k, w = 600, h = 500){
   desktop = new Window({
     className: "mac_os_x",
     title: o,
-    width:600,
-    height:500,
+    width: w,
+    height: h,
+    top:80,
+    left:400,
     url: k,
     hideEffectOptions: {duration:0.5}
   });

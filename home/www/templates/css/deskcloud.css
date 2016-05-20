@@ -141,6 +141,9 @@ display:block;
 .deskcloud_startmenu_item_photo {
   background: url("../images/icons/photo_icon.png") no-repeat 10px 5px;
 }
+.deskcloud_startmenu_item_calculator {
+  background: url("../images/icons/calculator_icon.png") no-repeat 10px 5px;
+}
 .deskcloud_startmenu_item_mynotes {
   background: url("../images/my_notes.png") no-repeat 2px 2px;
 }
