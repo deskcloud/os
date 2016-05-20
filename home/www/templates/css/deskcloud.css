@@ -123,10 +123,13 @@ display:block;
 .the_menu {
 	position:absolute;
 	display:none;
-	width:300px;
-	height:500px;
-	top:31px;
-	background: url("../images/launcher.png") no-repeat 2px 2px;
+	width:278px;
+	height:400px;
+	top:23px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	background: url("../images/launcher.png") no-repeat;
 	left:0;
 }
 
@@ -157,7 +160,7 @@ display:block;
 .the_menu span {
 	color:#333;
 	text-decoration:none;
-	padding:30px;
+	padding:35px;
 	display:block;
 	padding-left: 40px;
 }
