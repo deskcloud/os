@@ -64,7 +64,7 @@ PHP_METHOD(Deskcloud_Libs_File, create) {
 
 	ZEPHIR_SINIT_VAR(_0);
 	ZVAL_STRING(&_0, "w", 0);
-	ZEPHIR_CALL_FUNCTION(&file, "fopen", NULL, 1, location, &_0);
+	ZEPHIR_CALL_FUNCTION(&file, "fopen", NULL, 2, location, &_0);
 	zephir_check_call_status();
 	zephir_fwrite(NULL, file, content TSRMLS_CC);
 	zephir_fclose(file TSRMLS_CC);
@@ -93,7 +93,7 @@ PHP_METHOD(Deskcloud_Libs_File, read) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_FUNCTION("file_get_contents", NULL, 2, location, ZEPHIR_GLOBAL(global_true));
+	ZEPHIR_RETURN_CALL_FUNCTION("file_get_contents", NULL, 3, location, ZEPHIR_GLOBAL(global_true));
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -122,7 +122,7 @@ PHP_METHOD(Deskcloud_Libs_File, extension) {
 
 	ZEPHIR_SINIT_VAR(_0);
 	ZVAL_LONG(&_0, 4);
-	ZEPHIR_RETURN_CALL_FUNCTION("pathinfo", NULL, 3, location, &_0);
+	ZEPHIR_RETURN_CALL_FUNCTION("pathinfo", NULL, 4, location, &_0);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -161,7 +161,7 @@ PHP_METHOD(Deskcloud_Libs_File, time) {
 
 	ZEPHIR_INIT_VAR(_0);
 	zephir_filemtime(_0, location TSRMLS_CC);
-	ZEPHIR_RETURN_CALL_FUNCTION("date", NULL, 4, format, _0);
+	ZEPHIR_RETURN_CALL_FUNCTION("date", NULL, 5, format, _0);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -198,7 +198,7 @@ PHP_METHOD(Deskcloud_Libs_File, copy) {
 	}
 
 
-	ZEPHIR_CALL_FUNCTION(&_0, "copy", NULL, 5, location, newlocation);
+	ZEPHIR_CALL_FUNCTION(&_0, "copy", NULL, 6, location, newlocation);
 	zephir_check_call_status();
 	if (!zephir_is_true(_0)) {
 		php_printf("%s", "failed to copy...\n");
@@ -238,7 +238,7 @@ PHP_METHOD(Deskcloud_Libs_File, rename) {
 	}
 
 
-	ZEPHIR_CALL_FUNCTION(&_0, "rename", NULL, 6, location, newname);
+	ZEPHIR_CALL_FUNCTION(&_0, "rename", NULL, 7, location, newname);
 	zephir_check_call_status();
 	if (!zephir_is_true(_0)) {
 		php_printf("%s", "failed to rename...\n");
@@ -268,7 +268,7 @@ PHP_METHOD(Deskcloud_Libs_File, delete) {
 	}
 
 
-	ZEPHIR_CALL_FUNCTION(&_0, "unlink", NULL, 7, location);
+	ZEPHIR_CALL_FUNCTION(&_0, "unlink", NULL, 8, location);
 	zephir_check_call_status();
 	if (!zephir_is_true(_0)) {
 		php_printf("%s", "failed to delete...\n");
@@ -321,11 +321,11 @@ PHP_METHOD(Deskcloud_Libs_File, size) {
 		ZEPHIR_INIT_NVAR(_0$$3);
 		ZVAL_STRING(_0$$3, " TB", 1);
 		zephir_array_fast_append(type$$3, _0$$3);
-		ZEPHIR_CALL_FUNCTION(&size, "filesize", &_1, 8, location);
+		ZEPHIR_CALL_FUNCTION(&size, "filesize", &_1, 9, location);
 		zephir_check_call_status();
 		ZEPHIR_SINIT_VAR(_2$$3);
 		ZVAL_LONG(&_2$$3, 1024);
-		ZEPHIR_CALL_FUNCTION(&base, "log", NULL, 9, size, &_2$$3);
+		ZEPHIR_CALL_FUNCTION(&base, "log", NULL, 10, size, &_2$$3);
 		zephir_check_call_status();
 		if (ZEPHIR_GT_LONG(base, 0)) {
 			ZEPHIR_INIT_VAR(_3$$4);
@@ -345,7 +345,7 @@ PHP_METHOD(Deskcloud_Libs_File, size) {
 			RETURN_MM_STRING("0 bytes", 1);
 		}
 	} else {
-		ZEPHIR_RETURN_CALL_FUNCTION("filesize", &_1, 8, location);
+		ZEPHIR_RETURN_CALL_FUNCTION("filesize", &_1, 9, location);
 		zephir_check_call_status();
 		RETURN_MM();
 	}

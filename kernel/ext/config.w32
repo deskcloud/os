@@ -11,7 +11,7 @@ if (PHP_DESKCLOUD != "no") {
     AC_DEFINE("ZEPHIR_USE_PHP_JSON", 1, "Whether PHP json extension is present at compile time");
   }
   
-  ADD_SOURCES(configure_module_dirname + "/deskcloud", "deskcloud.zep.c", "deskcloud");
+  ADD_SOURCES(configure_module_dirname + "/deskcloud", "config.zep.c deskcloud.zep.c", "deskcloud");
 	ADD_SOURCES(configure_module_dirname + "/deskcloud/libs", "file.zep.c", "deskcloud");
   ADD_FLAG("CFLAGS_DESKCLOUD", "/D ZEPHIR_RELEASE");
 }

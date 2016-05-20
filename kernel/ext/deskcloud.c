@@ -27,6 +27,7 @@
 
 
 
+zend_class_entry *deskcloud_config_ce;
 zend_class_entry *deskcloud_deskcloud_ce;
 zend_class_entry *deskcloud_libs_file_ce;
 
@@ -54,6 +55,7 @@ static PHP_MINIT_FUNCTION(deskcloud)
 	setlocale(LC_ALL, "C");
 #endif
 	REGISTER_INI_ENTRIES();
+	ZEPHIR_INIT(Deskcloud_Config);
 	ZEPHIR_INIT(Deskcloud_Deskcloud);
 	ZEPHIR_INIT(Deskcloud_Libs_File);
 
